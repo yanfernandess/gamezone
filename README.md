@@ -91,9 +91,12 @@ R: 1.580
 
 # TASK 6 - Privilege Escalation with Metasploit
 
-Fiz uma pesquisa com searchsploit e descobri que conseguimos acesso através do Metasploitable para conseguir a flag root.txt.
+Se você estiver seguindo o guia da sala, neste ponto você poderá iniciar o Meterpreter e usar um módulo dentro da estrutura para obter um shell root. No entanto, se você ler como o exploit funciona, é muito simples apenas ler os arquivos no console do webmin. Para testar isso, vamos dar uma olhada no arquivo passwd:
 
-![image](https://github.com/yanfernandess/gamezone/assets/100174458/6b8219e3-6f47-46a9-b12d-d1e974f1cdab)
+![image](https://github.com/yanfernandess/gamezone/assets/100174458/91e33563-b26c-474a-a2d9-da1811989c49)
 
+Como você pode ver, tudo o que precisei fazer foi adicionar /file/show.cgi e, em seguida, o caminho e o nome do arquivo que desejo ver.
 
+Usando esta técnica simples, podemos pegar o sinalizador root:
 
+![image](https://github.com/yanfernandess/gamezone/assets/100174458/2af2fb5d-4620-476c-b2f7-84233d9ea3ea)
