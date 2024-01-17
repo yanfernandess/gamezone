@@ -100,3 +100,6 @@ Como você pode ver, tudo o que precisei fazer foi adicionar /file/show.cgi e, e
 Usando esta técnica simples, podemos pegar o sinalizador root:
 
 ![image](https://github.com/yanfernandess/gamezone/assets/100174458/2af2fb5d-4620-476c-b2f7-84233d9ea3ea)
+
+What is the root flag?
+R: a4b945830144bdd71908d12d902adeee
