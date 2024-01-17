@@ -63,8 +63,6 @@ Conseguimos acesso SSH com o login e a senha que acabamos de descriptografar.
 
 E conseguimos a primeira flag.
 
-![Uploading image.png…]()
-
 What is the de-hashed password?
 R: videogamer124
 
