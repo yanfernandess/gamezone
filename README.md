@@ -38,8 +38,6 @@ Temos duas tabelas dentro do banco de dados, vamos explorar elas.
 
 sqlmap -r request.txt -D db users --dump
 
-![image](https://github.com/yanfernandess/gamezone/assets/100174458/27c46287-82b9-4cde-96aa-4c7ec7ee35f5)
-
 In the users table, what is the hashed password?
 R: ab5db915fc9cea6c78df88106c6500c57f2b52901ca6c0c6218f04122c3efd14
 
@@ -55,7 +53,7 @@ Ele esta pedindo para descriptografar com o JohnTheRipper mas utilizei uma ferra
 
 https://www.dcode.fr/
 
-![image](https://github.com/yanfernandess/gamezone/assets/100174458/614ba3fd-7c28-42e6-a352-660754da9719)
+![image](https://github.com/yanfernandess/gamezone/assets/100174458/27c46287-82b9-4cde-96aa-4c7ec7ee35f5)
 
 Conseguimos acesso SSH com o login e a senha que acabamos de descriptografar.
 
