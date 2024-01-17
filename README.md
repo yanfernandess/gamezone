@@ -26,6 +26,7 @@ R: portal.php
 Salvar o código fonte que aparece no BURP SUITE da página logo após inserir alguma informação no input em um arquivo txt, vamos usar isso logo em seguida.
 
 sqlmap -r request.txt --current-db
+
 ![image](https://github.com/yanfernandess/gamezone/assets/100174458/e0590bd6-1677-4274-a095-f79b125ed9f7)
 
 Descobrimos que temos um banco de dados chamado 'db'
