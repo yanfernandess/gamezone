@@ -1,6 +1,6 @@
 # gamezone
 
-TASK 1 - Deploy the vulnerable machine
+# TASK 1 - Deploy the vulnerable machine
 
 What is the name of the large cartoon avatar holding a sniper on the forum?
 R: Agent 47
@@ -9,7 +9,7 @@ nmap -sC -sV 10.10.138.171
 
 ![image](https://github.com/yanfernandess/gamezone/assets/100174458/ff14a15b-5083-4c7b-8477-422c389aa6c0)
 
-TASK 2 -  Obtain access via SQLi
+# TASK 2 -  Obtain access via SQLi
 
 Log in: ' or 1=1 -- -
 Password:
@@ -21,7 +21,7 @@ R: portal.php
 
 ![image](https://github.com/yanfernandess/gamezone/assets/100174458/86b0560e-c2a6-4d29-b7dc-dd067d5c1232)
 
-TASK 3 - Using SQLMap
+# TASK 3 - Using SQLMap
 
 Salvar o código fonte que aparece no BURP SUITE da página logo após inserir alguma informação no input em um arquivo txt, vamos usar isso logo em seguida.
 
@@ -47,7 +47,7 @@ R: agent47
 What was the other table name?
 R: post
 
-TASK 4 - Cracking a password with JohnTheRipper
+# TASK 4 - Cracking a password with JohnTheRipper
 
 Ele esta pedindo para descriptografar com o JohnTheRipper mas utilizei uma ferramenta online para fazer isso, segue o link abaixo:
 
@@ -70,6 +70,30 @@ Now you have a password and username. Try SSH'ing onto the machine.
 What is the user flag?
 R: 649ac17b1480ac13ef1e4fa579dac95c
 
-TASK 5 - Exposing services with reverse SSH tunnels
+# TASK 5 - Exposing services with reverse SSH tunnels
+
+ssh -L 10000:localhost:10000 agent47@10.10.138.171
+
+![image](https://github.com/yanfernandess/gamezone/assets/100174458/338a6a7d-f737-4dfe-8f56-bcf1331c7e52)
+
+Fiz o Login com a credencial descoberta e descobri que se trata de um webmin da versão 1.580.
+
+![image](https://github.com/yanfernandess/gamezone/assets/100174458/45a7648c-0ecd-4bcb-bdf3-6277cf8ea382)
+
+How many TCP sockets are running?
+R: 5
+
+What is the name of the exposed CMS?
+R: Webmin
+
+What is the CMS version?
+R: 1.580
+
+# TASK 6 - Privilege Escalation with Metasploit
+
+Fiz uma pesquisa com searchsploit e descobri que conseguimos acesso através do Metasploitable para conseguir a flag root.txt.
+
+![image](https://github.com/yanfernandess/gamezone/assets/100174458/6b8219e3-6f47-46a9-b12d-d1e974f1cdab)
+
 
 
