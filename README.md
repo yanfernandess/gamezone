@@ -19,13 +19,13 @@ Password:
 When you've logged in, what page do you get redirected to?
 R: portal.php
 
-![image](https://github.com/yanfernandess/gamezone/assets/100174458/86b0560e-c2a6-4d29-b7dc-dd067d5c1232)
-
 # TASK 3 - Using SQLMap
 
 Salvar o código fonte que aparece no BURP SUITE da página logo após inserir alguma informação no input em um arquivo txt, vamos usar isso logo em seguida.
 
 sqlmap -r request.txt --current-db
+
+![image](https://github.com/yanfernandess/gamezone/assets/100174458/86b0560e-c2a6-4d29-b7dc-dd067d5c1232)
 
 ![image](https://github.com/yanfernandess/gamezone/assets/100174458/e0590bd6-1677-4274-a095-f79b125ed9f7)
 
