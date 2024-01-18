@@ -27,9 +27,9 @@ sqlmap -r request.txt --current-db
 
 ![image](https://github.com/yanfernandess/gamezone/assets/100174458/86b0560e-c2a6-4d29-b7dc-dd067d5c1232)
 
-![image](https://github.com/yanfernandess/gamezone/assets/100174458/e0590bd6-1677-4274-a095-f79b125ed9f7)
-
 Descobrimos que temos um banco de dados chamado 'db'
+
+![image](https://github.com/yanfernandess/gamezone/assets/100174458/e0590bd6-1677-4274-a095-f79b125ed9f7)
 
 sqlmap -r request.txt -D db --tables
 
